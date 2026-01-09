@@ -48,10 +48,10 @@ POST `/transacao`
 
 Request Body:
 
-{
+`{
   "valor": 150.75,
   "dataHora": "2026-01-08T10:30:00-03:00"
-}
+}`
 
 
 Regras de validação:
@@ -80,30 +80,15 @@ GET `/estatistica`
 
 Resposta:
 
-{
+`{
   "count": 3,
   "sum": 450.75,
   "avg": 150.25,
   "min": 100.00,
   "max": 200.75
-}
+}`
 
 Esses dados são calculados a partir das transações atualmente armazenadas em memória.
-
-Estrutura do projeto (resumo)
-controller
- ├─ TransactionController
- └─ StatisticsController
-
-service
- └─ TransactionService
-
-dto
- ├─ TransactionRequest
- └─ StatisticsResponse
-
-model
- └─ Transaction
 
 ⚠️ Observações importantes
 
